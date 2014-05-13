@@ -316,7 +316,7 @@ module IceCube
       pieces.concat rrules.map { |t| t.to_s }
       pieces.concat exrules.map { |t| "#{I18n.t("ice_cube.not")} #{t.to_s}" }
       pieces.concat [ StringBuilder.connected_sentence( ed.sort.map { |t| I18n.l(t.to_date, format: I18n.t("ice_cube.date.formats.default")) }, I18n.t("ice_cube.not_on")).strip ] unless ed.empty?
-      pieces << "#{I18n.t("ice_cube.until", date: I18n.l(end_time.to_date, format: I18n.t("ice_cube.date.formats.default")))}" if end_time
+      #pieces << "#{I18n.t("ice_cube.until", date: I18n.l(end_time.to_date, format: I18n.t("ice_cube.date.formats.default")))}" if end_time
       pieces.join(I18n.t "ice_cube.array.words_connector")
     end
 

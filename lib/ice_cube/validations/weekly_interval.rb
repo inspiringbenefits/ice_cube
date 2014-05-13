@@ -6,7 +6,7 @@ module IceCube
 
   module Validations::WeeklyInterval
 
-    def interval(interval, week_start = :sunday)
+    def interval(interval, week_start = :monday)
       @interval = interval
       @week_start = TimeUtil.wday_to_sym(week_start)
       replace_validations_for(:interval, [Validation.new(interval, week_start)])
