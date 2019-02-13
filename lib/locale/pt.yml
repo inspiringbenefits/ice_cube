@@ -27,13 +27,13 @@ pt:
       other: ao segundo %{segments}
     on_days: ! '%{days}'
     days_on:
-      - no Domingo
-      - na Segunda
-      - na Terça
-      - na Quarta
-      - na Quinta
-      - na Sexta
-      - no Sábado
+      - Domingo
+      - Segunda
+      - Terça
+      - Quarta
+      - Quinta
+      - Sexta
+      - Sábado
     array:
       last_word_connector: ! ' e '
       words_connector: ! ', '
@@ -44,25 +44,25 @@ pt:
       ordinals:
         default: ""
     each_week:
-      one: cada semana
+      one: todas as semanas
       other: a cada %{count} semanas
     each_year:
-      one: cada ano
+      one: todos os anos
       other: a cada %{count} anos
     each_second:
-      one: cada segundo
+      one: todos os segundos
       other: a cada %{count} segundos
     each_month:
-      one: cada mês
+      one: todos os meses
       other: a cada %{count} mêses
     each_minute:
-      one: cada minuto
+      one: todos os minutos
       other: a cada %{count} minutos
     each_hour:
-      one: cada hora
+      one: todas as horas
       other: a cada %{count} horas
     each_day:
-      one: cada dia
+      one: todos os dias
       other: a cada %{count} dias
     date:
       formats:
